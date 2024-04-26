@@ -1,0 +1,55 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style-home.css' %}">
+    <title>Indian Culture Management System</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><b><a href="#">Home</a></b></li>
+                <li><b><a href="{% url 'aboutus' %}">About</a></b></li>
+                <li><b><a href="{% url 'offerings' %}">Offerings</a></b></li>
+                <li><b><a href="{% url 'contactus' %}">Contact</a></b></li>
+                <li><b><a href="{% url 'signup' %}">Register</a></b></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to the Majestic India!</h2>
+            <p>"Exploring the Rich Tapestry of Indian Culture: Dive into the Vibrant Traditions, Art, and Heritage"</p>
+            <a href="#" class="btn">Glance</a>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-bus"></i>
+            <h3>Comprehensive Routes </h3>
+            <p>Exploring the Vastness of Indian Culture</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-ticket-alt"></i>
+            <h3>Infinite Paths</h3>
+            <p>Navigating the Richness of Indian Culture</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-clock"></i>
+            <h3>Uninterrupted Access</h3>
+            <p>Diving Deep into Indian Cultural Routes</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Indian Culture Management System. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'script-home.js' %}"></script>
+</body>
+</html>
